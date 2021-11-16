@@ -11,6 +11,8 @@ git config --global --unset https.proxy
 
 给pycharm挂上vpn再push
 
+或者
+git config --local http.proxy 127.0.0.1:4780
 
 
 ## Unable to access xxx OpenSSL SSL_read: Connection was reset, errno 10054
