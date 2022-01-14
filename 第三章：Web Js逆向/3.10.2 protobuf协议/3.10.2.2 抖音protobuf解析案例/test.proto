@@ -1,0 +1,345 @@
+syntax = "proto3";
+
+message test{
+    repeated Message message =1;
+    string cursor =2;
+    uint64 fetchInterval=3;
+    uint64 now=4;
+    string internalExt=5;
+    int32 fetchType=6;
+}
+message Message{
+    string method=1;
+    bytes payload=2;
+    uint64 msgId=3;
+    int32 msgType=4;
+    uint64 offset=5;
+    int64 rankScore = 7;
+    int64 topUserNo = 8;
+    int64 enterType = 9;
+    int64 action = 10;
+    string actionDescription = 11;
+    int64 userId = 12;
+    string popStr = 14;
+}
+message WebcastMemberMessage{
+    repeated Common common=1;
+    repeated User user=2;
+    uint64 memberCount=3;
+    repeated User operator=4;
+    bool isSetToAdmin=5;
+    bool isTopUser=6;
+}
+message WebcastLikeMessage{
+    repeated Common common=1;
+    uint64 count=2;
+    uint64 total=3;
+    uint64 color=4;
+    repeated User user=5;
+    string icon=6;
+}
+message WebcastChatMessage{
+    repeated Common common=1;
+    repeated User user=2;
+    string content=3;
+    bool visibleToSender = 4;
+    string fullScreenTextColor = 6;
+}
+
+message WebcastGiftMessage{
+    repeated Common common=1;
+    uint64 giftId=2;
+    uint64 fanTicketCount=3;
+    uint64 groupCount=4;
+    uint64 repeatCount=5;
+    uint64 comboCount=6;
+    repeated User user=7;
+    repeated User toUser=8;
+}
+
+message WebcastNoticeMessage{
+  Common common = 1;
+  string content = 2;
+  int64 noticeType = 3;
+  string style = 4;
+  Text title = 5;
+  Text violationReason = 6;
+  Text displayText = 7;
+  Text tipsTitle = 8;
+  string  tipsUrl = 9;
+  Text noticeTitle = 10;
+  Text noticeContent = 11;
+  int64 noticeTime = 12;
+  string limitNoticeKey = 13;
+}
+
+message Common{
+    string method=1;
+    uint64 msgId=2;
+    uint64 roomId=3;
+    uint64 createTime=4;
+    int32 monitor=5;
+    bool isShowMsg=6;
+    string describe=7;
+    repeated DisplayText displayText=8;
+    uint64 foldType=9;
+}
+
+message Text{
+  string key = 1;
+  string defaultPattern = 2;
+  TextFormat defaultFormat = 3;
+  repeated TextPiece pieces = 4;
+}
+
+message TextPiece{
+  int32 type = 1;
+  TextFormat format = 2;
+  string stringValue = 11;
+}
+
+message TextFormat{
+  string color = 1;
+  bool bold = 2;
+  bool italic = 3;
+  int32 weight = 4;
+  int32 italicAngle = 5;
+  int32 fontSize = 6;
+  bool useHeighLightColor = 7;
+  bool useRemoteClor = 8;
+}
+message TextPieceUser{
+  User user = 1;
+  bool withColon = 2;
+}
+
+message DisplayText{
+    string key=1;
+    string defaultPattern=2;
+}
+
+
+message User{
+  message OwnRoom{
+    repeated int64 roomIds = 1;
+    repeated string roomIdsStr = 2;
+  }
+  message FansGroupInfo{
+    string listFansGroupUrl = 1;
+  }
+  message FansClub{
+    message FansClubData{
+      string clubName = 1;
+      int32 level = 2;
+      int32 userFansClubStatus = 3;
+      repeated int64 availableGiftIds = 5;
+      int64 anchorId = 6;
+    }
+    FansClubData data = 1;
+    map<int32, FansClubData> preferData = 2;
+  }
+  message BrotherhoodInfo{
+    string name = 1;
+    int64 level = 2;
+    string fontColor = 4;
+  }
+  message UserStats{
+    int64 id = 1;
+    string idStr = 2;
+    int64 followingCount = 3;
+    int64 followerCount = 4;
+    int64 recordCount = 5;
+    int64 totalDuration = 6;
+    int64 dailyFanTicketCount = 7;
+    int64 dailyIncome = 8;
+    int64 itemCount = 9;
+    int64 favoriteItemCount = 10;
+    int64 diamondCount = 11;
+    int64 diamondConsumedCount = 12;
+    int64 tuwenItemCount = 13;
+  }
+  message PoiInfo{
+    bool isPoiEnabled = 1;
+    int64 poiId = 2;
+    string poiName = 3;
+    string poiIdStr = 4;
+  }
+  message AuthenticationInfo{
+    message AccountTypeInfo{
+      map<int64, bool> accountTypeMap = 1;
+    }
+    string customVerify = 1;
+    string enterpriseVerifyReason = 2;
+    repeated int32 levelList = 4;
+    AccountTypeInfo accountTypeInfo = 10;
+  }
+  message XiguaParams{
+    message UserExtendInfo{
+      message RocketSchema{
+        string  rSchema = 1;
+        string rToken = 2;
+        string downloadUrl = 3;
+      }
+      string shareUrl = 1;
+      string rSchemaUrl = 2;
+      RocketSchema rocketSchemaInfo = 3;
+    }
+    string userAuthInfo = 1;
+    int64 ugcPublishMediaId = 2;
+    int64 mediaId = 3;
+    string authorDesc = 4;
+    string description = 5;
+    bool userVerified = 6;
+    UserExtendInfo userExtendInfo = 7;
+  }
+  message AuthorStats{
+    int64 videoTotalCount = 1;
+    int64 videoTotalPlayCount = 2;
+    int64 videoTotalShareCount = 3;
+    int64 videoTotalSeriesCount = 4;
+    int64 varietyShowPlayCount = 5;
+    int64 videoTotalFavoriteCount = 6;
+  }
+  message AnchorLevel{
+    int64 level = 1;
+    int64 experience = 2;
+    int64 lowestExperienceThisLevel = 3;
+    int64 highestExperienceThisLevel = 4;
+    int64 taskStartExperience = 5;
+    int64 taskStartTime = 6;
+    int64 taskDecreaseExperience = 7;
+    int64 taskTargetExperience = 8;
+    int64 taskEndTime = 9;
+  }
+  message NobleLevelInfo{
+    int64 nobleLevel = 2;
+    string nobleName = 4;
+    int64 expireTime = 5;
+    repeated string nobleBackgroundColor = 9;
+  }
+  message AnchorInfo{
+    int64 level = 1;
+  }
+  message Border {
+    int64 level = 2;
+  }
+  message UserAttr{
+    bool isMuted = 1;
+    bool isAdmin = 2;
+    bool isSuperAdmin = 3;
+    repeated int32 adminPrivileges = 4;
+  }
+  message PayGrade{
+    message GradeIcon {
+      int64 iconDiamond = 2;
+      int64 level = 3;
+      string levelStr = 4;
+    }
+    int64 totalDiamondCount = 1;
+    string  name = 3;
+    string nextName = 5;
+    int64 level = 6;
+    int64 nextDiamond = 8;
+    int64 nowDiamond = 9;
+    int64 thisGradeMinDiamond = 10;
+    int64 thisGradeMaxDiamond = 11;
+    int64 payDiamondBak = 12;
+    string gradeDescribe = 13;
+    int64 screenChatType = 15;
+    int64  upgradeNeedConsume = 21;
+    string nextPrivileges = 22;
+    int64 score = 25;
+    string gradeBanner = 1001;
+  }
+  message FollowInfo{
+    int64 followingCount = 1;
+    int64 followerCount = 2;
+    int64 followStatus = 3;
+    int64 pushStatus = 4;
+  }
+  int64 id = 1;
+  int64 shortId = 2;
+  string nickname = 3;
+  int32 gender = 4;
+  string signature = 5;
+  int32 level = 6;
+  int64 birthday = 7;
+  string telephone = 8;
+  bool verified = 12;
+  int32 experience = 13;
+  string city = 14;
+  int32 status = 15;
+  int64 createTime = 16;
+  int64 modifyTime = 17;
+  int32 secret = 18;
+  string shareQrcodeUri = 19;
+  int32 incomeSharePercent = 20;
+  FollowInfo followInfo = 22;
+  PayGrade payGrade = 23;
+  FansClub fansClub = 24;
+  Border border = 25;
+  string specialId = 26;
+  int64  topVipNo = 31;
+  UserAttr userAttr = 32;
+  OwnRoom ownRoom = 33;
+  int64 payScore = 34;
+  int64 ticketCount = 35;
+  AnchorInfo anchorInfo = 36;
+  int32 linkMicStats = 37;
+  string displayId = 38;
+  bool withCommercePermission = 39;
+  bool withFusionShopEntry = 40;
+  int64 totalRechargeDiamondCount = 41;
+  AnchorLevel webcastAnchorLevel = 42;
+  string verifiedContent = 43;
+  AuthorStats authorStats = 44;
+  repeated User topFans = 45;
+  string secUid = 46;
+  int32 userRole = 47;
+  int32 authorizationInfo = 54;
+  int32 adversaryAuthorizationInfo = 55;
+  int32 adversaryUserStatus = 58;
+  string locationCity = 63;
+  bool allowBeLocated = 1001;
+  bool allowFindByContacts = 1002;
+  bool allowOthersDownloadVideo = 1003;
+  bool allowOthersDownloadWhenSharingVideo = 1004;
+  bool allowShareShowProfile = 1005;
+  bool allowShowInGossip = 1006;
+  bool allowShowMyAction = 1007;
+  bool allowStrangeComment = 1008;
+  bool allowUnfollowerComment = 1009;
+  bool allowUseLinkmic = 1010;
+  string bgImgUrl = 1013;
+  string birthdayDescription = 1014;
+  bool birthdayValid = 1015;
+  int32 blockStatus = 1016;
+  int32 commentRestrict = 1017;
+  string constellation = 1018;
+  int32 disableIchat = 1019;
+  int64 enableIchatImg = 1020;
+  int32 exp = 1021;
+  int64 fanTicketCount = 1022;
+  bool foldStrangerChat = 1023;
+  int64 followStatus = 1024;
+  bool hotsoonVerified = 1025;
+  string hotsoonVerifiedReason = 1026;
+  int32 ichatRestrictType = 1027;
+  string idStr = 1028;
+  bool isFollower = 1029;
+  bool isFollowing = 1030;
+  bool needProfileGuide = 1031;
+  int64 payScores = 1032;
+  bool pushCommentStatus = 1033;
+  bool pushDigg = 1034;
+  bool pushFollow = 1035;
+  bool pushFriendAction = 1036;
+  bool pushIchat = 1037;
+  bool pushStatus = 1038;
+  bool pushVideoPost = 1039;
+  bool pushVideoRecommend = 1040;
+  UserStats stats = 1041;
+  bool verifiedMobile = 1042;
+  string verifiedReason = 1043;
+  bool withCarManagementPermission = 1044;
+}
