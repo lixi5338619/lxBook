@@ -8,7 +8,7 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 
 给pycharm挂上vpn再push
-
+1
 
 或者当前项目设置代理：
 
