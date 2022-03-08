@@ -1,6 +1,8 @@
 
 ##  Unable to access ... 443: Timed out
 
+##  OpenSSL SSL_connect: Connection was reset in connection to github.com:443
+
 取消全局解决：
 
 git config --global --unset http.proxy
@@ -22,5 +24,6 @@ git config --global http.sslBackend "openssl"
 
 ---
 
-OpenSSL SSL_connect: Connection was reset in connection to github.com:443
 
+
+git config --global -l
