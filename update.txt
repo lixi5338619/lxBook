@@ -2,7 +2,7 @@
 ##  Unable to access ... 443: Timed out
 
 取消全局解决：
-
+1
 git config --global --unset http.proxy
 
 git config --global --unset https.proxy
