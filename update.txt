@@ -12,8 +12,8 @@ git config --global --unset https.proxy
 
 或者当前项目设置代理：
 
-git config --local http.proxy 127.0.0.1:10808
-git config --local https.proxy 127.0.0.1:10808
+git config --local http.proxy 127.0.0.1:4780
+git config --local https.proxy 127.0.0.1:4780
 
 
 ## Unable to access xxx OpenSSL SSL_read: Connection was reset, errno 10054
