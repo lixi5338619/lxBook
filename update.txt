@@ -24,6 +24,5 @@ git config --global http.sslBackend "openssl"
 
 ---
 
-1111
 
 git config --global -l
