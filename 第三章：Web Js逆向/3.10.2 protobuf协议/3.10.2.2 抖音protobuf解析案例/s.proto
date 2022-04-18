@@ -1,0 +1,92 @@
+syntax = "proto3";
+
+message test{
+    repeated Message message =1;
+    string cursor =2;
+    uint64 fetchInterval=3;
+    uint64 now=4;
+    string internalExt=5;
+    int32 fetchType=6;
+}
+
+message Message{
+    string method=1;
+    bytes payload=2;
+    uint64 msgId=3;
+    int32 msgType=4;
+    uint64 offset=5;
+    int64 rankScore = 7;
+    int64 topUserNo = 8;
+    int64 enterType = 9;
+    int64 action = 10;
+    int64 userId = 12;
+    string popStr = 14;
+}
+
+message WebcastMemberMessage{
+    repeated Common common=1;
+    repeated User user=2;
+    uint64 memberCount=3;
+    repeated User operator=4;
+    bool isSetToAdmin=5;
+    bool isTopUser=6;
+}
+
+message WebcastLikeMessage{
+    repeated Common common=1;
+    uint64 count=2;
+    uint64 total=3;
+    uint64 color=4;
+    repeated User user=5;
+    string icon=6;
+}
+
+message WebcastChatMessage{
+    repeated Common common=1;
+    repeated User user=2;
+    string content=3;
+    bool visibleToSender = 4;
+    string fullScreenTextColor = 6;
+}
+
+message WebcastGiftMessage{
+    repeated Common common=1;
+    uint64 giftId=2;
+    uint64 fanTicketCount=3;
+    uint64 groupCount=4;
+    uint64 repeatCount=5;
+    uint64 comboCount=6;
+    repeated User user=7;
+    repeated User toUser=8;
+}
+
+message Common{
+    string method=1;
+    uint64 msgId=2;
+    uint64 roomId=3;
+    uint64 createTime=4;
+    int32 monitor=5;
+    bool isShowMsg=6;
+    string describe=7;
+    uint64 foldType=9;
+}
+
+message User{
+  int64 id = 1;
+  int64 shortId = 2;
+  string nickname = 3;
+  int32 gender = 4;
+  string signature = 5;
+  int32 level = 6;
+  int64 birthday = 7;
+  string telephone = 8;
+  bool verified = 12;
+  int32 experience = 13;
+  string city = 14;
+  int32 status = 15;
+  int64 createTime = 16;
+  int64 modifyTime = 17;
+  int32 secret = 18;
+  string shareQrcodeUri = 19;
+  int32 incomeSharePercent = 20;
+}
