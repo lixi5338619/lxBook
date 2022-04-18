@@ -23,6 +23,5 @@ git config --local https.proxy 127.0.0.1:4780
 git config --global http.sslBackend "openssl"
 
 ---
-1
 
 git config --global -l
