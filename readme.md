@@ -1,7 +1,10 @@
 
-# 《爬虫逆向进阶实战》书籍代码库 （书马上上市！）
+# 《爬虫逆向进阶实战》书籍代码库 （书已开始预售啦！）
+
+书籍内容介绍：http://t.csdn.cn/Y1wsV
 
 ![爬虫逆向进阶实战](https://img-blog.csdnimg.cn/de25338bca1f45cebfe0acf8a81d1438.png?)
+
 
 
 ## 加群
