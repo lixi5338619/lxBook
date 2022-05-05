@@ -13,6 +13,9 @@
 
 代码库中有需要补充的内容可以提Issues或者加群联系我。
 
+# 案例涉及的APK
+
+一些APK的下载链接: https://pan.baidu.com/s/1odDoOh2JKlpF5t7MmH1QJg?pwd=n7ug 
 
 # 逆向相关工具
 
