@@ -77,11 +77,19 @@
 - [AppSignGet](https://pan.baidu.com/s/1_j2QTVFD6qHP3FKp_FVeCw?pwd=6qmu)
 
 
+## chrome插件
+- [request-hook](https://pan.baidu.com/s/1OmMiE4rJrTNwarw3EJbz0A?pwd=thyl)
+- [Trace-dist](https://github.com/L018/Trace)
+
+
+
 ### 微信小程序
 
 - [UnpackMiniApp](https://pan.baidu.com/s/1dwUehOAnPka9eHjXN6Y-Lg?pwd=unp7)
 
 - [CrackMinApp](https://github.com/Cherrison/CrackMinApp)
+
+
 
 
 # 其他常用工具
@@ -91,5 +99,6 @@
 - [鬼鬼JS调试工具](https://pan.baidu.com/s/1hjdgx3DOTJMp0wtYGAa67A?pwd=1s67)
 
  
+
 
 
