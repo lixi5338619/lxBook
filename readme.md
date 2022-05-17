@@ -32,7 +32,7 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [超级Jadx](https://pan.baidu.com/s/1SHsJGfnGJJmcPfgcC_lnYA?pwd=9999)
 
-- [IDAPro7.0 调试工具Windows版本](https://download.csdn.net/download/weixin_43582101/12701873)
+- [IDAPro7.0 调试工具Windows版本](https://pan.baidu.com/s/1_-PorRCwHDMpmUI1t_cKcQ?pwd=t39m)
 
 - [ddms](https://pan.baidu.com/s/1wdsZvTA-fAZ12o53Exw80A?pwd=wk3d)
 
