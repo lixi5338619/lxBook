@@ -82,13 +82,12 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [fridaManager](https://pan.baidu.com/s/1u_P2P_kd_H2n2SYTaLB0hA?pwd=jovi)
 
-- [NP管理器](https://pan.baidu.com/s/1X5g8loORq_WS0HLqeasLbg?pwd=9jk7)
-
 - [AppSignGet](https://pan.baidu.com/s/1_j2QTVFD6qHP3FKp_FVeCw?pwd=6qmu)
 
 
 ## chrome插件
 - [request-hook](https://pan.baidu.com/s/1OmMiE4rJrTNwarw3EJbz0A?pwd=thyl)
+
 - [Trace-dist](https://github.com/L018/Trace)
 
 
@@ -108,7 +107,8 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [鬼鬼JS调试工具](https://pan.baidu.com/s/1hjdgx3DOTJMp0wtYGAa67A?pwd=1s67)
 
- 
+- [MT 管理器](https://pan.baidu.com/s/1AfBDHVvini4bweDOD9GoIw?pwd=9999)
 
+- [NP 管理器](https://pan.baidu.com/s/1X5g8loORq_WS0HLqeasLbg?pwd=9jk7)
 
 
