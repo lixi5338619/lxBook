@@ -39,6 +39,5 @@ function get_signature(url) {
 }
 
 // Js代码位置
-
 url = '';
 console.log(get_signature(url));
