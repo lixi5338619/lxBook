@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/9/27 14:46
+# @UpdataTime : 2022/5/31 12:34
 # @Author  : lx
 
 from selenium import webdriver
@@ -35,7 +36,7 @@ class Browser():
         self.api_url = kwargs.get("api_url", None)
         self.referrer = kwargs.get("referer", "https://trendinsight.oceanengine.com/")
         # TODO： update your executablePath
-        self.executablePath = kwargs.get("executablePath", "chromedriver.exe")
+        self.executablePath = kwargs.get("executablePath", r"C:\Users\lx\Desktop\driver\chromedriver.exe")
 
         args = kwargs.get("browser_args", [])
         options = kwargs.get("browser_options", {})
@@ -46,7 +47,7 @@ class Browser():
             self.args = args
 
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
+        #options.add_argument("--headless")
         options.add_argument("log-level=2")
         self.options = {
             "headless": True,
@@ -75,16 +76,49 @@ class Browser():
 
     def signature(self, keyword, start_date, end_date):
         sign_url = self.browser.execute_script('''
-                var e={"url":"https://trendinsight.oceanengine.com/api/open/index/get_multi_keyword_hot_trend",
-                        "method":"POST",
-                        "data" : '{"keyword_list": ["%s"],"start_date": "%s","end_date": "%s","app_name": "aweme"}'};
-                var h = new XMLHttpRequest;h.open(e.method, e.url, true);
-                h.setRequestHeader("accept","application/json, text/plain, */*");  
-                h.setRequestHeader("content-type","application/json;charset=UTF-8");
-                h.send(e.data);
-                return h._url
+                    function queryData(url) {
+                       var p = new Promise(function(resolve,reject) {
+                           var e={"url":"https://trendinsight.oceanengine.com/api/open/index/get_multi_keyword_hot_trend",
+                                    "method":"POST",
+                                    "data" : '{"keyword_list": ["%s"],"start_date": "%s","end_date": "%s","app_name": "aweme"}'};
+                            var h = new XMLHttpRequest;h.open(e.method, e.url, true);
+                            h.setRequestHeader("accept","application/json, text/plain, */*");  
+                            h.setRequestHeader("content-type","application/json;charset=UTF-8");
+                            h.setRequestHeader("tea-uid","7054893410171930123");
+                            h.onreadystatechange =function() {
+                                 if(h.readyState != 4) return;
+                                 if(h.readyState === 4 && h.status  ===200) {
+                                    resolve(h.responseURL);
+                                 } else {
+                                  }
+                            };
+                            h.send(e.data);
+                            });
+                            return p;
+                        }
+                    var p1 = queryData('lx');
+                    res = Promise.all([p1]).then(function(result){
+                    return result
+                    })
+                    return res;
         ''' % (keyword, start_date, end_date))
-        return sign_url
+        '''
+        let e={"url":"https://trendinsight.oceanengine.com/api/open/index/get_multi_keyword_hot_trend",
+                                "method":"POST",
+                                "data" : '{"keyword_list":["lx"],"start_date":"20220430","end_date":"20220530","app_name":"aweme"}'};
+        var h = new XMLHttpRequest;h.open(e.method, e.url, true);
+        h.setRequestHeader("accept","application/json, text/plain, */*");
+        h.setRequestHeader("content-type","application/json;charset=UTF-8");
+        h.setRequestHeader("tea-uid","7054893410171930123");
+                h.onreadystatechange=function(){
+                    if (h.status===200){
+                       console.log(h.responseText)
+                       console.log(h.responseURL)
+                    }
+                }
+        h.send(e.data);
+        '''
+        return sign_url[0]
 
     def close(self):
         self.browser.close()
@@ -95,10 +129,9 @@ def get_data(keyword, start_date, end_date):
     data = '{"keyword_list": ["%s"],"start_date": "%s","end_date": "%s","app_name": "aweme"}' % (
     keyword, start_date, end_date)
     sign_url = browser.signature(keyword=keyword, start_date=start_date, end_date=end_date)
-    print(sign_url)
+    print("sign_url:",sign_url)
     doc = requests.post(sign_url, headers=h, data=data.encode()).json()['data']
     return doc
-
 
 import base64
 from Crypto.Cipher import AES
@@ -118,6 +151,6 @@ browser = Browser()
 # test
 decrtptlx(get_data(keyword='lx', start_date="20210826", end_date="20210926"))
 # test
-decrtptlx(get_data(keyword = 'yyy',start_date = "20210826",end_date = "20210926"))
-# 需要修改driver-path
+decrtptlx(get_data(keyword = '鞠婧祎',start_date = "20210826",end_date = "20210926"))
+
 browser.close()
