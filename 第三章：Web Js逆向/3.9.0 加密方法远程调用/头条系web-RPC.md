@@ -41,6 +41,7 @@
 ---
 
 ## Python实现
+注意：url要换成自己浏览器上的。
 ```python
 # -*- coding: utf-8 -*-
 # @UpdataTime : 2022/6/1 16:00
@@ -93,6 +94,7 @@ class Browser():
 
 
 browser = Browser()
+# 注意：url要换成自己浏览器上的。
 print(browser.search_item('爬虫逆向进阶实战'))
 print(browser.search_item('RPC'))
 print(browser.search_item('案例'))
