@@ -10,4 +10,9 @@
 ![image](https://user-images.githubusercontent.com/45314745/171310487-323cd907-0105-4946-b9b9-f3f88e00c4f1.png)
 
 
-所以我们按照书中方法，进行模拟执行即可。 可以看视频教程有助理解
+所以我们按照书中方法，进行模拟执行即可。 （可以看视频教程有助理解）
+
+
+代码中需要安装的依赖库： requests、lxpy、selenium、Crypto
+
+Crypto库下载链接：https://pan.baidu.com/s/1xOg9qKWNsMfmWuT20Gf9FA?pwd=9999
