@@ -36,7 +36,7 @@ class Browser():
         self.api_url = kwargs.get("api_url", None)
         self.referrer = kwargs.get("referer", "https://trendinsight.oceanengine.com/")
         # TODO： update your executablePath
-        self.executablePath = kwargs.get("executablePath", r"C:\Users\lx\Desktop\driver\chromedriver.exe")
+        self.executablePath = kwargs.get("executablePath", r"chromedriver.exe")
 
         args = kwargs.get("browser_args", [])
         options = kwargs.get("browser_options", {})
