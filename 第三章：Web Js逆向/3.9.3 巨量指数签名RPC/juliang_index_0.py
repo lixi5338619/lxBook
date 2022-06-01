@@ -121,3 +121,4 @@ decrtptlx(get_data(keyword='lx', start_date="20210826", end_date="20210926"))
 decrtptlx(get_data(keyword = '鞠婧祎',start_date = "20210826",end_date = "20210926"))
 # 需要修改driver-path
 browser.close()
+  
