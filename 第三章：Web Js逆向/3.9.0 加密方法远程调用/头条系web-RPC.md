@@ -94,7 +94,8 @@ class Browser():
 
 
 browser = Browser()
-# 注意：url要换成自己浏览器上的。
+# 注意：如果没打印内容，把url换成自己浏览器上的。还不行就在控制台上执行js看是否有误。
+# 版本 102.0.5005.63（正式版本） （64 位）
 print(browser.search_item('爬虫逆向进阶实战'))
 print(browser.search_item('RPC'))
 print(browser.search_item('案例'))
