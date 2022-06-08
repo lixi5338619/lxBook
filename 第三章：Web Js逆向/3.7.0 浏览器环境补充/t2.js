@@ -50,5 +50,5 @@ function get_signature(url) {
     return _signature
 }
 
-
+   
 console.log(get_signature(url));
