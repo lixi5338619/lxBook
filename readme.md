@@ -3,6 +3,8 @@
 
 书籍内容介绍：http://t.csdn.cn/Y1wsV
 
+官方旗舰店：https://item.jd.com/10050499209765.html
+
 ![爬虫逆向进阶实战](https://img-blog.csdnimg.cn/de25338bca1f45cebfe0acf8a81d1438.png?)
 
 
