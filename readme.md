@@ -120,4 +120,4 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [NP 管理器](https://pan.baidu.com/s/1X5g8loORq_WS0HLqeasLbg?pwd=9jk7)
 
-
+- [Autojs](https://pan.baidu.com/s/1bbjFWMjFU5m2RupRyIZcGw?pwd=4ikp)
