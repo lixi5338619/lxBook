@@ -1,7 +1,7 @@
 
 # 《爬虫逆向进阶实战》书籍代码库 （视频教程背面扫码！）
 
-书籍内容介绍：http://t.csdn.cn/Y1wsV
+书籍内容介绍：http://t.csdn.cn/Y1wsV    
 
 官方旗舰店：https://item.jd.com/10050499209765.html
 
@@ -24,7 +24,7 @@
   
 ## 加群
 
-可关注《pythonlx》公众号获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
+可关注 **《pythonlx》公众号** 获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
 
 代码库中有需要补充的内容可以提Issues或者加群联系我。
 
@@ -121,3 +121,8 @@ python、java、nodejs等环境大家自己安装一下。
 - [NP 管理器](https://pan.baidu.com/s/1X5g8loORq_WS0HLqeasLbg?pwd=9jk7)
 
 - [Autojs](https://pan.baidu.com/s/1bbjFWMjFU5m2RupRyIZcGw?pwd=4ikp)
+
+
+# 访问统计
+
+![Visitor Count](https://profile-counter.glitch.me/lixi5338619/count.svg)
