@@ -22,7 +22,7 @@
 
 6、（2022-06-12）更新视频教程：[webpack逆向案例](https://www.bilibili.com/video/BV1QS4y1i7vp?spm_id_from=333.999.0.0)
   
-7、（2022-06-16）更新10.2.1代码。
+7、（2022-06-16）更新10.2.1代码。[邮箱滑块验证](https://www.bilibili.com/video/BV1ZB4y1W7nS)
  
 ## 加群
 
