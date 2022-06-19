@@ -42,7 +42,7 @@ python、java、nodejs等环境大家自己安装一下。
 
 ### 查壳反编译
 
-- [查壳小工具](https://download.csdn.net/download/weixin_43582101/12837573) 
+- [查壳小工具](https://pan.baidu.com/s/1s1BoElAyQCnPaxb2T3QpEw?pwd=tmbs) 
 
 - [AndroidKiller](https://down.52pojie.cn/Tools/Android_Tools/) 
 
