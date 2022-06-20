@@ -23,7 +23,9 @@
 6、（2022-06-12）更新视频教程：[webpack逆向案例](https://www.bilibili.com/video/BV1QS4y1i7vp?spm_id_from=333.999.0.0)
   
 7、（2022-06-16）更新10.2.1代码。[邮箱滑块验证](https://www.bilibili.com/video/BV1ZB4y1W7nS)
- 
+
+8、（2022-06-18）增加案例 [某图片混淆的滑块协议验证](https://www.bilibili.com/video/BV16L4y1N7kk?)、[某站反调试和加解密](https://www.bilibili.com/video/BV1iB4y1S7Pk?)
+
 ## 加群
 
 可关注 **《pythonlx》公众号** 获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
