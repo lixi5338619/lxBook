@@ -37,21 +37,12 @@ import org.json.JSONObject;
 
 
 public class AwemeSrv extends NanoHTTPD {
-    private XC_LoadPackage.LoadPackageParam lpp = null;
     private static final String NULL_MD5_STRING = "00000000000000000000000000000000";
+    private XC_LoadPackage.LoadPackageParam lpp = null;
     public  String sessionid="";
-    // 目标页面
-    final static String targetUrl = "";
-    // 代理服务器
-    final static String ProxyHost = "";
-    final static Integer ProxyPort = 9180;
-    // 代理账号密码
-    final static String ProxyUser = "";
-    final static String ProxyPass = "";
-
 
     public AwemeSrv() {
-        super(5555);
+        super(18989);
     }
 
     public void init(XC_LoadPackage.LoadPackageParam lpparam) {
@@ -158,28 +149,6 @@ public class AwemeSrv extends NanoHTTPD {
         String isoString = new String(barr, "ISO-8859-1");
         json_obj.put("form", isoString);
         return json_obj.toString();
-//        return getUrl(url, stub, time1, x_gon, time, barr);
-//        OkHttpClient client = new OkHttpClient();
-//        RequestBody body = RequestBody.create(MediaType.parse("application/octet-stream;tt-data=a"), barr);
-//        Request request = new Request.Builder()
-//                .url(url)
-//                .post(body)
-//                .addHeader("X-SS-STUB", stub + "")
-//                .addHeader("X-SS-QUERIES", "dGMCBr6ot3awALq2Nv3edzsIDAA64UgVCowOSMiipaluXQSusMJstGtAtPoLFt4dlWnb170KEMyXNqxqyhg1bHwPC%2BHaf4is%2BcqASBDqB1T4lYSCCk3ewmCMutLc3N53qYrbju9PlyUGZWAAUIxmHVzx9Xs%3D")
-//                .addHeader("X-SS-REQ-TICKET", time1 + "")
-//                .addHeader("X-Gorgon", x_gon + "")
-//                .addHeader("X-Khronos", time + "")
-//                .addHeader("Content-Type", "application/octet-stream;tt-data=a")
-//                .addHeader("Host", "log.snssdk.com")
-//                .addHeader("User-Agent", "okhttp/3.10.0.1")
-//                .build();
-//
-//        okhttp3.Response response = client.newCall(request).execute();
-//        XposedBridge.log("X-SS-STUB " + stub);
-//        XposedBridge.log("x_gon " + x_gon);
-//        XposedBridge.log("url " + url);
-////        XposedBridge.log("response.body " + response.body().string());
-//        return response.body().string();
     }
 
     private static String getUrl(String url, String stub, long time1, String x_gon, int time, byte[] barr) {
@@ -190,7 +159,6 @@ public class AwemeSrv extends NanoHTTPD {
             }
         });
 
-        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(ProxyHost, ProxyPort));
         String doc = null;
         try {
             doc = Jsoup
@@ -198,7 +166,6 @@ public class AwemeSrv extends NanoHTTPD {
                     .ignoreContentType(true)
                     .ignoreHttpErrors(true)
                     .timeout(4000)
-                    .proxy(proxy)
                     .userAgent("okhttp/3.10.0.1")
                     .header("X-SS-STUB", stub+"")
                     .header("X-SS-QUERIES", "dGMCBr6ot3awALq2Nv3edzsIDAA64UgVCowOSMiipaluXQSusMJstGtAtPoLFt4dlWnb170KEMyXNqxqyhg1bHwPC%2BHaf4is%2BcqASBDqB1T4lYSCCk3ewmCMutLc3N53qYrbju9PlyUGZWAAUIxmHVzx9Xs%3D")
