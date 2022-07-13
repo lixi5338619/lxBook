@@ -1,4 +1,10 @@
-常用的Js Hook代码。
+参数定位工具的下载地址在代码库中。
+
+下载地址：https://pan.baidu.com/s/1OmMiE4rJrTNwarw3EJbz0A?pwd=thyl
+
+---
+
+下面是一些常用的Js Hook代码。
 
 ## Hook setInterval
 ```js
