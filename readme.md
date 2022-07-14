@@ -26,6 +26,8 @@
 
 8、（2022-06-18）增加案例 [某图片混淆的滑块协议验证](https://www.bilibili.com/video/BV16L4y1N7kk?)、[某站反调试和加解密](https://www.bilibili.com/video/BV1iB4y1S7Pk?)
 
+9、（2022-07-14）增加第八章及部分内容。
+
 ## 加群
 
 可关注 **《pythonlx》公众号** 获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
