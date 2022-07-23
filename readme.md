@@ -10,23 +10,25 @@
 
 ## 更新说明
 
-1、（2022-05-23）因为某些在线工具下架了，给大家做了一个：http://cnlans.com/lx/tools
+01、（2022-05-23）因为某些在线工具下架了，给大家做了一个：http://cnlans.com/lx/tools
 
-2、（2022-05-25）案例3.9.2，网站调整为wss协议，最新教程和代码已更新。
+02、（2022-05-25）案例3.9.2，网站调整为wss协议，最新教程和代码已更新。
 
-3、（2022-06-01）案例3.9.3，网站请求接口调整，最新教程和代码已更新。
+03、（2022-06-01）案例3.9.3，网站请求接口调整，最新教程和代码已更新。
 
-4、（2022-06-02）新增3.9.0，新增附录，增加书外案例。
+04、（2022-06-02）新增3.9.0，新增附录，增加书外案例。
 
-5、（2022-06-06）案例更新的代码在本代码库中，更新的视频在b站:[考古学家lx](https://space.bilibili.com/390499740)。
+05、（2022-06-06）案例更新的代码在本代码库中，更新的视频在b站:[考古学家lx](https://space.bilibili.com/390499740)。
 
-6、（2022-06-12）更新视频教程：[webpack逆向案例](https://www.bilibili.com/video/BV1QS4y1i7vp?spm_id_from=333.999.0.0)
-  
-7、（2022-06-16）更新10.2.1代码。[邮箱滑块验证](https://www.bilibili.com/video/BV1ZB4y1W7nS)
+06、（2022-06-12）更新视频教程：[webpack逆向案例一](https://www.bilibili.com/video/BV1QS4y1i7vp?spm_id_from=333.999.0.0)
 
-8、（2022-06-18）增加案例 [某图片混淆的滑块协议验证](https://www.bilibili.com/video/BV16L4y1N7kk?)、[某站反调试和加解密](https://www.bilibili.com/video/BV1iB4y1S7Pk?)
+07、（2022-06-16）更新10.2.1代码。[邮箱滑块验证](https://www.bilibili.com/video/BV1ZB4y1W7nS)
 
-9、（2022-07-14）增加第八章及部分内容。
+08、（2022-06-18）增加案例 [某图片混淆的滑块协议验证](https://www.bilibili.com/video/BV16L4y1N7kk?)、[某站反调试和加解密](https://www.bilibili.com/video/BV1iB4y1S7Pk?)
+
+09、（2022-07-14）增加第八章及部分内容。
+
+10、（2022-07-23）增加视频教程：[webpack逆向案例二](https://www.bilibili.com/video/BV1Da411M7k7?spm_id_from=333.999.0.0)
 
 ## 加群
 
