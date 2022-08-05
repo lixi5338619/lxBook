@@ -1,7 +1,7 @@
 
 # 《爬虫逆向进阶实战》书籍代码库 （视频教程背面扫码！）
 
-书籍内容介绍：http://t.csdn.cn/Y1wsV    
+书籍内容介绍：http://t.csdn.cn/Y1wsV    （视频教程在书背面扫码！）
 
 官方旗舰店：https://item.jd.com/10050499209765.html
 
