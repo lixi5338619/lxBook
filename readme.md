@@ -30,6 +30,8 @@
 
 10、（2022-07-23）增加视频教程：[webpack逆向案例二](https://www.bilibili.com/video/BV1Da411M7k7?spm_id_from=333.999.0.0)
 
+11、（2022-07-24）增加视频教程：[webpack逆向案例三](https://www.bilibili.com/video/BV1MB4y1h7nK/?spm_id_from=333.999.0.0)
+
 ## 加群
 
 可关注 **《pythonlx》公众号** 获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
