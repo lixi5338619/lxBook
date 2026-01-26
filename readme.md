@@ -32,6 +32,8 @@
 
 11、（2022-07-24）增加视频教程：[webpack逆向案例三](https://www.bilibili.com/video/BV1MB4y1h7nK/?spm_id_from=333.999.0.0)
 
+12、（2026-01-26）在原有目录中增加了一些内容，更新了一些逆向分析工具。
+
 ## 加群
 
 可关注 **《pythonlx》公众号** 获取群聊二维码，购书的同学可以扫码背面二维码加客服进入读者群。
@@ -56,7 +58,9 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [Apktools2.5.0](https://pan.baidu.com/s/12qB4N_2Fg-IsTB2BcQuiDw?pwd=gjqs) 
 
-- [超级Jadx](https://pan.baidu.com/s/1SHsJGfnGJJmcPfgcC_lnYA?pwd=9999)
+- [jadx](https://github.com/skylot/jadx)
+
+- [jadx-gui-ai](https://github.com/cncsnet1/jadx-gui-ai)
 
 - [IDAPro7.0 调试工具Windows版本](https://pan.baidu.com/s/1_-PorRCwHDMpmUI1t_cKcQ?pwd=t39m)
 
@@ -64,7 +68,9 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [JEB3.0中文版](https://pan.baidu.com/s/1kCjw8dP9tq7kLBWkublHag?pwd=k2s4)
 
-- [JEB2.3.7](https://pan.baidu.com/s/1HgyyEomL72jLWY1XMtHv8g?pwd=zpha)
+- [JEB2.3.7(out)](https://pan.baidu.com/s/1HgyyEomL72jLWY1XMtHv8g?pwd=zpha)
+
+- [超级Jadx(out)](https://pan.baidu.com/s/1SHsJGfnGJJmcPfgcC_lnYA?pwd=9999)
 
 ### 脱壳工具
 
@@ -80,6 +86,8 @@ python、java、nodejs等环境大家自己安装一下。
 
 ### HOOK工具
 
+- [Frida](https://github.com/frida/frida)
+
 - [Xposed](https://pan.baidu.com/s/15WnJD8qj9UzSss55DWLNfA?pwd=7sgb)
 
 - [VAExposed](https://pan.baidu.com/s/1fd0r2fy4mm4jUArGE4MZvA?pwd=mu9q)
@@ -88,6 +96,9 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [SSLUnpinning 20](https://pan.baidu.com/s/1EZuv-JK0a-TLHhw4v6SkvQ?pwd=dsfj)  
 
+- [fridaManager](https://pan.baidu.com/s/1u_P2P_kd_H2n2SYTaLB0hA?pwd=jovi)
+
+- [算法助手]，作者: 军哥
 
 ### 抓包工具
 
@@ -99,16 +110,20 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [HttpAnalyzerStd V7](https://pan.baidu.com/s/1p3ThL5yqqc5XwTrDdmmGCg?pwd=x9hg)
 
-- [fridaManager](https://pan.baidu.com/s/1u_P2P_kd_H2n2SYTaLB0hA?pwd=jovi)
+- [Reqable](https://reqable.com/)
 
-- [AppSignGet](https://pan.baidu.com/s/1_j2QTVFD6qHP3FKp_FVeCw?pwd=6qmu)
-
+- [Dexterceptor: LSPosed插件-okhttp拦截器](https://github.com/errorman-awful/Dexterceptor)
 
 ## chrome插件
 - [request-hook](https://pan.baidu.com/s/1OmMiE4rJrTNwarw3EJbz0A?pwd=thyl)
 
 - [Trace-dist](https://github.com/L018/Trace)
 
+- [v_jstools](https://github.com/cilame/v_jstools)
+
+- [AntiDebug Breaker](https://github.com/0xsdeo/AntiDebug_Breaker)
+
+- [油猴-控制台防检测](https://greasyfork.org/zh-CN/scripts/523792-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E9%98%B2%E6%A3%80%E6%B5%8B)
 
 
 ### 微信小程序
@@ -132,7 +147,6 @@ python、java、nodejs等环境大家自己安装一下。
 
 - [Autojs](https://pan.baidu.com/s/1bbjFWMjFU5m2RupRyIZcGw?pwd=4ikp)
 
+- [AppSignGet](https://pan.baidu.com/s/1_j2QTVFD6qHP3FKp_FVeCw?pwd=6qmu)
 
-# 访问统计
 
-![Visitor Count](https://profile-counter.glitch.me/lixi5338619/count.svg)
