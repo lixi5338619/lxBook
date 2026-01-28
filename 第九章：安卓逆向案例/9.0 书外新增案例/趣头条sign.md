@@ -56,7 +56,6 @@ params：
 hook看看参数和参数值
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0e7aa39d9f6b497d90f4b9b6e86769bb.png)
 包名：com.jifen.qukan
-版本：8.1.0
 
 ---
 
